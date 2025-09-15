@@ -220,28 +220,6 @@
 		(layer "F.SilkS")
 		(uuid "13f7d2dd-be88-4819-bd0b-7502c9f73212")
 	)
-	(fp_circle
-		(center -6 -23)
-		(end -3.5 -23)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "ce0d49f7-7fd5-46ae-a6f0-d3a97383fc64")
-	)
-	(fp_circle
-		(center 66 -23)
-		(end 68.5 -23)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "c1e86434-157e-4ff2-bf4c-5202a9f1e535")
-	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -47.8 0)
 		(unlocked yes)
@@ -254,13 +232,49 @@
 			)
 		)
 	)
+	(fp_text user "${REFERENCE}"
+		(at 66 -23 0)
+		(layer "F.Fab")
+		(uuid "c105340d-c538-4021-8e70-44e01b2dc6fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -5.9 -23 0)
+		(layer "F.Fab")
+		(uuid "f608a8d7-2275-4530-a2b3-376c092c5527")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at -6 -23)
+		(size 5.3 5.3)
+		(drill 5.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "a5fdc5c2-d8a8-40ee-9da8-26b2083a48e7")
+	)
+	(pad "" np_thru_hole circle
+		(at 66 -23)
+		(size 5.3 5.3)
+		(drill 5.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "7dde9aa2-14a0-47cd-bb5a-1e2f7ac3a175")
+	)
 	(pad "1" thru_hole circle
-		(at 17.78 -1.27)
+		(at 40.64 -1.27)
 		(size 2.54 2.54)
 		(drill 1.27)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "78ea0170-49b6-4bc4-89b7-6c4dd0a06e34")
+		(uuid "fffbd349-7577-48ac-8946-b066c86e69ec")
 	)
 	(pad "2" thru_hole circle
 		(at 25.4 -1.27)
@@ -279,12 +293,12 @@
 		(uuid "4604c735-2be6-4016-a4e6-fd59436b7c17")
 	)
 	(pad "4" thru_hole circle
-		(at 40.64 -1.27)
+		(at 17.78 -1.27)
 		(size 2.54 2.54)
 		(drill 1.27)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "fffbd349-7577-48ac-8946-b066c86e69ec")
+		(uuid "78ea0170-49b6-4bc4-89b7-6c4dd0a06e34")
 	)
 	(pad "5" thru_hole circle
 		(at 16.51 -44.45)
@@ -333,10 +347,6 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "4b956a4f-d1c9-4c90-9a81-b25aec6cd338")
-	)
-	(group ""
-		(uuid "7f436a53-e35e-4849-966d-01b6eaf5d426")
-		(members "c1e86434-157e-4ff2-bf4c-5202a9f1e535" "ce0d49f7-7fd5-46ae-a6f0-d3a97383fc64")
 	)
 	(embedded_fonts no)
 )

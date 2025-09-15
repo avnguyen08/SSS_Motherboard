@@ -187,7 +187,11 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2667,
+        0.5,
+        1.0,
+        3.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -219,6 +223,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -498,7 +506,7 @@
         "microvia_drill": 0.1,
         "name": "2A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.5,
         "via_diameter": 0.6,
@@ -512,11 +520,19 @@
         "microvia_drill": 0.1,
         "name": "6A",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 3.0,
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "name": "FB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2667
       }
     ],
     "meta": {
@@ -578,11 +594,11 @@
         "pattern": "SCR2_GATE"
       },
       {
-        "netclass": "2A",
+        "netclass": "FB",
         "pattern": "SCR1_CATHODE"
       },
       {
-        "netclass": "2A",
+        "netclass": "FB",
         "pattern": "SCR2_CATHODE"
       },
       {
@@ -600,6 +616,14 @@
       {
         "netclass": "6A",
         "pattern": "T4"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
+      },
+      {
+        "netclass": "2A",
+        "pattern": "JP12-A"
       }
     ]
   },
@@ -674,6 +698,12 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
           "show": false
         },
         {

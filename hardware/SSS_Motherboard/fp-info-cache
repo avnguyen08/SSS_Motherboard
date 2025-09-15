@@ -1,4 +1,4 @@
-25222964559539472
+25228255654119934
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -88837,6 +88837,20 @@ Project_Lib
 5
 5
 Project_Lib
+CD-DF4xx5
+
+
+0
+4
+4
+Project_Lib
+CD-DF4xxS(L)
+8.1x10.5mm, 4A, single phase bridge rectifier, https://www.bourns.com/docs/Product-Datasheets/CD-DF4xxSL.pdf
+Surface Mount Bridge Rectifier Diode
+0
+4
+4
+Project_Lib
 CPC1966YX6
 
 
@@ -88864,6 +88878,13 @@ NTR4003NT3G
 0
 3
 3
+Project_Lib
+SRN6045
+
+
+0
+2
+2
 Project_Lib
 Transformer
 
