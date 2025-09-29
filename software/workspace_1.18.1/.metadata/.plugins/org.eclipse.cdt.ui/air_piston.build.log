@@ -1,0 +1,10 @@
+16:04:09 **** Incremental Build of configuration Debug for project air_piston ****
+make -j8 all 
+arm-none-eabi-size  air_piston.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17192	     28	   1700	  18920	   49e8	air_piston.elf
+Finished building: default.size.stdout
+ 
+
+16:04:10 Build Finished. 0 errors, 0 warnings. (took 143ms)
+
